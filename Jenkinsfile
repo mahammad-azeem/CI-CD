@@ -6,7 +6,7 @@ node() {
 
 stage('checkoutSCM') {
 checkout(
-[$class:'checkoutSubversionSCM', remote:'svn/url/to/be/checkout', location:'/d/Softwares']
+[$class:'checkoutSubversionSCM', remote:'svn/url/to/be/checkout', location:'/d/Softwares', credentialsID: 'Azeem']
 )
 }
 
